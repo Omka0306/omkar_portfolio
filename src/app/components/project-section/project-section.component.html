@@ -1,0 +1,41 @@
+<section id="projects" class="container py-24">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <app-project-card 
+      title="Real-time Revenue Management Platform"
+      description="Developed a scalable revenue management platform using Angular, Node.js, and AWS. Implemented secure authentication with AWS Cognito and role-based access control. Optimized AWS Serverless architecture, reducing operational costs by 30%."
+      image="/assets/revenue-platform.svg"
+      [technologies]="['Angular', 'Node.js', 'AWS', 'PostgreSQL']"
+      demoUrl="#"
+      codeUrl="#"
+    ></app-project-card>
+    
+    <app-project-card 
+      title="Enterprise Ticketing Web & Device App"
+      description="Built a cross-platform ticketing system using Angular and Flutter. Integrated secure payment gateways and real-time transaction processing. Maintained high code quality through test automation and rigorous code reviews."
+      image="/assets/ticketing-platform.svg"
+      [technologies]="['Angular', 'Flutter', 'PostgreSQL', 'AWS']"
+      demoUrl="#"
+      codeUrl="#"
+    ></app-project-card>
+    
+    <app-project-card 
+      title="Consultation App"
+      description="Developed an interactive consultation platform with OTP-based authentication using AWS Cognito. Implemented real-time communication using AWS WebSocket and optimized user experience with seamless navigation."
+      image="/assets/consultation-app.svg"
+      [technologies]="['Angular', 'Node.js', 'AWS', 'WebSocket']"
+      demoUrl="#"
+      codeUrl="#"
+    ></app-project-card>
+    
+    <app-project-card 
+      title="Portfolio Website"
+      description="Designed and developed a personal portfolio website showcasing technical expertise, projects, and experience. Implemented smooth animations and an interactive UI to engage hiring managers. Hosted on AWS with CI/CD integration."
+      image="/assets/portfolio.svg"
+      [technologies]="['Angular', 'Tailwind CSS', 'AWS', 'CI/CD']"
+      demoUrl="#"
+      codeUrl="#"
+    ></app-project-card>
+  </div>
+</section>

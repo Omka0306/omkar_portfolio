@@ -1,0 +1,66 @@
+<section id="skills" class="container py-24">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Technical Skills</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="space-y-4 animate-slideUp">
+      <h3 class="text-xl font-semibold mb-4">Frontend</h3>
+      <div class="flex flex-wrap gap-2">
+        <app-skill-badge name="Angular"></app-skill-badge>
+        <app-skill-badge name="TypeScript"></app-skill-badge>
+        <app-skill-badge name="JavaScript"></app-skill-badge>
+        <app-skill-badge name="HTML/CSS"></app-skill-badge>
+        <app-skill-badge name="Tailwind CSS"></app-skill-badge>
+        <app-skill-badge name="RxJS"></app-skill-badge>
+        <app-skill-badge name="NgRx"></app-skill-badge>
+        <app-skill-badge name="Angular Material"></app-skill-badge>
+      </div>
+    </div>
+    
+    <div class="space-y-4 animate-slideUp delay-200">
+      <h3 class="text-xl font-semibold mb-4">Backend</h3>
+      <div class="flex flex-wrap gap-2">
+        <app-skill-badge name="Node.js"></app-skill-badge>
+        <app-skill-badge name="Express"></app-skill-badge>
+        <app-skill-badge name=".NET"></app-skill-badge>
+        <app-skill-badge name="PostgreSQL"></app-skill-badge>
+        <app-skill-badge name="MongoDB"></app-skill-badge>
+        <app-skill-badge name="REST APIs"></app-skill-badge>
+        <app-skill-badge name="GraphQL"></app-skill-badge>
+      </div>
+    </div>
+    
+    <div class="space-y-4 animate-slideUp delay-400">
+      <h3 class="text-xl font-semibold mb-4">Cloud & DevOps</h3>
+      <div class="flex flex-wrap gap-2">
+        <app-skill-badge name="AWS"></app-skill-badge>
+        <app-skill-badge name="Azure"></app-skill-badge>
+        <app-skill-badge name="GCP"></app-skill-badge>
+        <app-skill-badge name="Docker"></app-skill-badge>
+        <app-skill-badge name="Kubernetes"></app-skill-badge>
+        <app-skill-badge name="CI/CD"></app-skill-badge>
+        <app-skill-badge name="Git"></app-skill-badge>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  .animate-fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  .animate-slideUp {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-400 { animation-delay: 400ms; }
+  </style>
